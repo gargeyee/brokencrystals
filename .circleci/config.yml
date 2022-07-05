@@ -4,8 +4,8 @@ jobs:
     docker:
       - image: byrnedo/alpine-curl
     environment:
-      product: CircleCI
-      subProduct: CircleCI
+      product: Niki-1
+      subProduct: Jira
       environment: Production
       token: $ARMORCODE_TOKEN
       buildTool: CIRCLE_CI
@@ -22,4 +22,3 @@ workflows:
   armorcode-validation-workflow:
     jobs:
       - armorcode-validate
-    
